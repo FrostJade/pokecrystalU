@@ -389,7 +389,8 @@ Continue:
 	jp FinishContinueFunction
 
 SpawnAfterRed:
-	ld a, SPAWN_MT_SILVER
+; TODO replace spawn with sensible spawn after Red equivalent
+	ld a, SPAWN_NEW_BARK
 	ld [wDefaultSpawnpoint], a
 
 PostCreditsSpawn:

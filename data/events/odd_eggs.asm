@@ -67,12 +67,8 @@ OddEggs:
 	db THUNDERSHOCK, CHARM, DIZZY_PUNCH, 0
 	dw 00256 ; OT ID
 	dt 125 ; Exp
-	; Stat exp
-	bigdw 0
-	bigdw 0
-	bigdw 0
-	bigdw 0
-	bigdw 0
+	db 0, 0, 0, 0, 0, 0 ; EVs
+	db 0, 0, 0, 0 ; padding
 	dn 2, 10, 10, 10 ; DVs
 	db 30, 20, 10, 0 ; PP
 	db 20 ; Step cycles to hatch
