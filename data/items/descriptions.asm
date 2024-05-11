@@ -47,7 +47,7 @@ ItemDescriptions:
 	dw DireHitDesc
 	dw TeruSama3Desc
 	dw FreshWaterDesc
-	dw SodaPopDesc
+	dw SodaDesc
 	dw LemonadeDesc
 	dw XAttackDesc
 	dw TeruSama4Desc
@@ -173,7 +173,7 @@ ItemDescriptions:
 	dw PolkadotBowDesc
 	dw TeruSama22Desc
 	dw UpGradeDesc
-	dw BerryDesc
+	dw OranBerryDesc
 	dw GoldBerryDesc
 	dw SquirtBottleDesc
 	dw TeruSama23Desc
@@ -260,24 +260,24 @@ ItemDescriptions:
 	assert_table_length $ff
 
 MasterBallDesc:
-	db   "The best BALL. It"
+	db   "The best Ball. It"
 	next "never misses.@"
 
 UltraBallDesc:
-	db   "A BALL with a high"
+	db   "A Ball with a high"
 	next "rate of success.@"
 
 BrightpowderDesc:
 	db   "Lowers the foe's"
-	next "accuracy. (HOLD)@"
+	next "accuracy. (Hold)@"
 
 GreatBallDesc:
-	db   "A BALL with a de-"
+	db   "A Ball with a de-"
 	next "cent success rate.@"
 
 PokeBallDesc:
 	db   "An item for catch-"
-	next "ing #MON.@"
+	next "ing Pokémon.@"
 
 TeruSama1Desc:
 	db   "?@"
@@ -288,27 +288,27 @@ BicycleDesc:
 
 MoonStoneDesc:
 	db   "Evolves certain"
-	next "kinds of #MON.@"
+	next "kinds of Pokémon.@"
 
 AntidoteDesc:
 	db   "Cures poisoned"
-	next "#MON.@"
+	next "Pokémon.@"
 
 BurnHealDesc:
 	db   "Heals burned"
-	next "#MON.@"
+	next "Pokémon.@"
 
 IceHealDesc:
 	db   "Defrosts frozen"
-	next "#MON.@"
+	next "Pokémon.@"
 
 AwakeningDesc:
 	db   "Awakens sleeping"
-	next "#MON.@"
+	next "Pokémon.@"
 
 ParlyzHealDesc:
 	db   "Heals paralyzed"
-	next "#MON.@"
+	next "Pokémon.@"
 
 FullRestoreDesc:
 	db   "Fully restores HP"
@@ -316,18 +316,18 @@ FullRestoreDesc:
 
 MaxPotionDesc:
 	db   "Fully restores"
-	next "#MON HP.@"
+	next "Pokémon HP.@"
 
 HyperPotionDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 200.@"
 
 SuperPotionDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 50.@"
 
 PotionDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 20.@"
 
 EscapeRopeDesc:
@@ -335,67 +335,67 @@ EscapeRopeDesc:
 	next "from caves, etc.@"
 
 RepelDesc:
-	db   "Repels weak #-"
-	next "MON for 100 steps.@"
+	db   "Repels weak Poké-"
+	next "mon for 100 steps.@"
 
 MaxElixerDesc:
 	db   "Fully restores the"
-	next "PP of one #MON.@"
+	next "PP of one Pokémon.@"
 
 FireStoneDesc:
 	db   "Evolves certain"
-	next "kinds of #MON.@"
+	next "kinds of Pokémon.@"
 
 ThunderStoneDesc:
 	db   "Evolves certain"
-	next "kinds of #MON.@"
+	next "kinds of Pokémon.@"
 
 WaterStoneDesc:
 	db   "Evolves certain"
-	next "kinds of #MON.@"
+	next "kinds of Pokémon.@"
 
 TeruSama2Desc:
 	db   "?@"
 
 HPUpDesc:
 	db   "Raises the HP of"
-	next "one #MON.@"
+	next "one Pokémon.@"
 
 ProteinDesc:
-	db   "Raises ATTACK of"
-	next "one #MON.@"
+	db   "Raises Attack of"
+	next "one Pokémon.@"
 
 IronDesc:
-	db   "Raises DEFENSE of"
-	next "one #MON.@"
+	db   "Raises Defense of"
+	next "one Pokémon.@"
 
 CarbosDesc:
-	db   "Raises SPEED of"
-	next "one #MON.@"
+	db   "Raises Speed of"
+	next "one Pokémon.@"
 
 LuckyPunchDesc:
 	db   "Ups critical hit"
-	next "ratio of CHANSEY.@"
+	next "ratio of Chansey.@"
 
 CalciumDesc:
-	db   "Ups SPCL.ATK stats"
-	next "of one #MON.@"
+	db   "Ups Spcl.Atk stats"
+	next "of one Pokémon.@"
 
 RareCandyDesc:
 	db   "Raises level of a"
-	next "#MON by one.@"
+	next "Pokémon by one.@"
 
 XAccuracyDesc:
 	db   "Raises accuracy."
-	next "(1 BTL)@"
+	next "(1 Btl)@"
 
 LeafStoneDesc:
 	db   "Evolves certain"
-	next "kinds of #MON.@"
+	next "kinds of Pokémon.@"
 
 MetalPowderDesc:
-	db   "Raises DEFENSE of"
-	next "DITTO. (HOLD)@"
+	db   "Raises Defense of"
+	next "Ditto. (Hold)@"
 
 NuggetDesc:
 	db   "Made of pure gold."
@@ -403,7 +403,7 @@ NuggetDesc:
 
 PokeDollDesc:
 	db   "Use to escape from"
-	next "a wild #MON.@"
+	next "a wild Pokémon.@"
 
 FullHealDesc:
 	db   "Eliminates all"
@@ -411,61 +411,61 @@ FullHealDesc:
 
 ReviveDesc:
 	db   "Restores a fainted"
-	next "#MON to 1/2 HP.@"
+	next "Pokémon to 1/2 HP.@"
 
 MaxReviveDesc:
 	db   "Fully restores a"
-	next "fainted #MON.@"
+	next "fainted Pokémon.@"
 
 GuardSpecDesc:
 	db   "Prevents stats"
-	next "reduction. (1 BTL)@"
+	next "reduction. (1 Btl)@"
 
 SuperRepelDesc:
-	db   "Repels weak #-"
-	next "MON for 200 steps.@"
+	db   "Repels weak Poké-"
+	next "mon for 200 steps.@"
 
 MaxRepelDesc:
-	db   "Repels weak #-"
-	next "MON for 250 steps.@"
+	db   "Repels weak Poké-"
+	next "mon for 250 steps.@"
 
 DireHitDesc:
 	db   "Ups critical hit"
-	next "ratio. (1 BTL)@"
+	next "ratio. (1 Btl)@"
 
 TeruSama3Desc:
 	db   "?@"
 
 FreshWaterDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 50.@"
 
-SodaPopDesc:
-	db   "Restores #MON"
+SodaDesc:
+	db   "Restores Pokémon"
 	next "HP by 60.@"
 
 LemonadeDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 80.@"
 
 XAttackDesc:
-	db   "Raises ATTACK."
-	next "(1 BTL)@"
+	db   "Raises Attack."
+	next "(1 Btl)@"
 
 TeruSama4Desc:
 	db   "?@"
 
 XDefendDesc:
-	db   "Raises DEFENSE."
-	next "(1 BTL)@"
+	db   "Raises Defense."
+	next "(1 Btl)@"
 
 XSpeedDesc:
-	db   "Raises SPEED."
-	next "(1 BTL)@"
+	db   "Raises Speed."
+	next "(1 Btl)@"
 
 XSpecialDesc:
-	db   "Raises SPECIAL"
-	next "ATTACK. (1 BTL)@"
+	db   "Raises Special"
+	next "Attack. (1 Btl)@"
 
 CoinCaseDesc:
 	db   "Holds up to 9,999"
@@ -479,24 +479,24 @@ TeruSama5Desc:
 	db   "?@"
 
 ExpShareDesc:
-	db   "Shares battle EXP."
+	db   "Shares battle Exp."
 	next "Points. (HOLD)@"
 
 OldRodDesc:
 	db   "Use by water to"
-	next "fish for #MON.@"
+	next "fish for Pokémon.@"
 
 GoodRodDesc:
-	db   "A good ROD for"
-	next "catching #MON.@"
+	db   "A good Rod for"
+	next "catching Pokémon.@"
 
 SilverLeafDesc:
 	db   "A strange, silver-"
 	next "colored leaf.@"
 
 SuperRodDesc:
-	db   "The best ROD for"
-	next "catching #MON.@"
+	db   "The best Rod for"
+	next "catching Pokémon.@"
 
 PPUpDesc:
 	db   "Raises max PP of"
@@ -516,19 +516,19 @@ ElixerDesc:
 
 RedScaleDesc:
 	db   "A scale from the"
-	next "red GYARADOS.@"
+	next "red Gyarados.@"
 
 SecretPotionDesc:
 	db   "Fully heals any"
-	next "#MON.@"
+	next "Pokémon.@"
 
 SSTicketDesc:
 	db   "A ticket for the"
-	next "S.S.AQUA.@"
+	next "S.S.Aqua.@"
 
 MysteryEggDesc:
-	db   "An EGG obtained"
-	next "from MR.#MON.@"
+	db   "An Egg obtained"
+	next "from Mr.Pokémon.@"
 
 ClearBellDesc:
 	db   "Makes a gentle"
@@ -539,16 +539,16 @@ SilverWingDesc:
 	next "colored feather.@"
 
 MoomooMilkDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 100.@"
 
 QuickClawDesc:
 	db   "Raises 1st strike"
-	next "ratio. (HOLD)@"
+	next "ratio. (Hold)@"
 
 PsnCureBerryDesc:
 	db   "A self-cure for"
-	next "poison. (HOLD)@"
+	next "poison. (Hold)@"
 
 GoldLeafDesc:
 	db   "A strange, gold-"
@@ -556,42 +556,42 @@ GoldLeafDesc:
 
 SoftSandDesc:
 	db   "Powers up ground-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 SharpBeakDesc:
 	db   "Powers up flying-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 PrzCureBerryDesc:
 	db   "A self-cure for"
-	next "paralysis. (HOLD)@"
+	next "paralysis. (Hold)@"
 
 BurntBerryDesc:
 	db   "A self-cure for"
-	next "freezing. (HOLD)@"
+	next "freezing. (Hold)@"
 
 IceBerryDesc:
 	db   "A self-heal for a"
-	next "burn. (HOLD)@"
+	next "burn. (Hold)@"
 
 PoisonBarbDesc:
 	db   "Powers up poison-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 KingsRockDesc:
 	db   "May make the foe"
-	next "flinch. (HOLD)@"
+	next "flinch. (Hold)@"
 
 BitterBerryDesc:
 	db   "A self-cure for"
-	next "confusion. (HOLD)@"
+	next "confusion. (Hold)@"
 
 MintBerryDesc:
 	db   "A self-awakening"
-	next "for sleep. (HOLD)@"
+	next "for sleep. (Hold)@"
 
 RedApricornDesc:
-	db   "A red APRICORN.@"
+	db   "A red Apricorn.@"
 
 TinyMushroomDesc:
 	db   "An ordinary mush-"
@@ -603,57 +603,57 @@ BigMushroomDesc:
 
 SilverPowderDesc:
 	db   "Powers up bug-type"
-	next "moves. (HOLD)@"
+	next "moves. (Hold)@"
 
 BluApricornDesc:
-	db   "A blue APRICORN.@"
+	db   "A blue Apricorn.@"
 
 TeruSama6Desc:
 	db   "?@"
 
 AmuletCoinDesc:
 	db   "Doubles monetary"
-	next "earnings. (HOLD)@"
+	next "earnings. (Hold)@"
 
 YlwApricornDesc:
-	db   "A yellow APRICORN.@"
+	db   "A yellow Apricorn.@"
 
 GrnApricornDesc:
-	db   "A green APRICORN.@"
+	db   "A green Apricorn.@"
 
 CleanseTagDesc:
 	db   "Helps repel wild"
-	next "#MON. (HOLD)@"
+	next "Pokémon. (Hold)@"
 
 MysticWaterDesc:
 	db   "Powers up water-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 TwistedSpoonDesc:
 	db   "Powers up psychic-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 WhtApricornDesc:
-	db   "A white APRICORN.@"
+	db   "A white Apricorn.@"
 
 BlackbeltDesc:
 	db   "Boosts fighting-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 BlkApricornDesc:
-	db   "A black APRICORN."
+	db   "A black Apricorn."
 	next "@"
 
 TeruSama7Desc:
 	db   "?@"
 
 PnkApricornDesc:
-	db   "A pink APRICORN."
+	db   "A pink Apricorn."
 	next "@"
 
 BlackGlassesDesc:
 	db   "Powers up dark-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 SlowpokeTailDesc:
 	db   "Very tasty. Sell"
@@ -661,7 +661,7 @@ SlowpokeTailDesc:
 
 PinkBowDesc:
 	db   "Powers up normal-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 StickDesc:
 	db   "An ordinary stick."
@@ -669,19 +669,19 @@ StickDesc:
 
 SmokeBallDesc:
 	db   "Escape from wild"
-	next "#MON. (HOLD)@"
+	next "Pokémon. (Hold)@"
 
 NeverMeltIceDesc:
 	db   "Powers up ice-type"
-	next "moves. (HOLD)@"
+	next "moves. (Hold)@"
 
 MagnetDesc:
 	db   "Boosts electric-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 MiracleBerryDesc:
 	db   "Cures all status"
-	next "problems. (HOLD)@"
+	next "problems. (Hold)@"
 
 PearlDesc:
 	db   "A beautiful pearl."
@@ -693,19 +693,19 @@ BigPearlDesc:
 
 EverStoneDesc:
 	db   "Stops evolution."
-	next "(HOLD)@"
+	next "(Hold)@"
 
 SpellTagDesc:
 	db   "Powers up ghost-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 RageCandyBarDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 20.@"
 
 GSBallDesc:
 	db   "The mysterious"
-	next "BALL.@"
+	next "Ball.@"
 
 BlueCardDesc:
 	db   "Card to save"
@@ -713,7 +713,7 @@ BlueCardDesc:
 
 MiracleSeedDesc:
 	db   "Powers up grass-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 ThickClubDesc:
 	db   "A bone of some"
@@ -721,17 +721,17 @@ ThickClubDesc:
 
 FocusBandDesc:
 	db   "May prevent faint-"
-	next "ing. (HOLD)@"
+	next "ing. (Hold)@"
 
 TeruSama8Desc:
 	db   "?@"
 
 EnergyPowderDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 50. Bitter.@"
 
 EnergyRootDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 200. Bitter.@"
 
 HealPowderDesc:
@@ -740,31 +740,31 @@ HealPowderDesc:
 
 RevivalHerbDesc:
 	db   "Revives fainted"
-	next "#MON. Bitter.@"
+	next "Pokémon. Bitter.@"
 
 HardStoneDesc:
 	db   "Powers up rock-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 LuckyEggDesc:
-	db   "Earns extra EXP."
-	next "points. (HOLD)@"
+	db   "Earns extra Exp."
+	next "points. (Hold)@"
 
 CardKeyDesc:
 	db   "Opens shutters in"
-	next "the RADIO TOWER.@"
+	next "the Radio Tower.@"
 
 MachinePartDesc:
 	db   "A machine part for"
-	next "the POWER PLANT.@"
+	next "the Power Plant.@"
 
 EggTicketDesc:
 	db   "May use at Golden-"
 	next "rod trade corner.@"
 
 LostItemDesc:
-	db   "The # DOLL lost"
-	next "by the COPYCAT.@"
+	db   "The Poké Doll lost"
+	next "by the Copycat.@"
 
 StardustDesc:
 	db   "Pretty, red sand."
@@ -779,7 +779,7 @@ BasementKeyDesc:
 
 PassDesc:
 	db   "A ticket for the"
-	next "MAGNET TRAIN.@"
+	next "Magnet Train.@"
 
 TeruSama9Desc:
 	db   "?@"
@@ -788,20 +788,20 @@ TeruSama10Desc:
 	db   "?@"
 
 ZincDesc:
-	db   "Raises SPCL.DEF of"
-	next "one #MON.@"
+	db   "Raises Spcl.Def of"
+	next "one Pokémon.@"
 
 CharcoalDesc:
 	db   "Powers up fire-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 BerryJuiceDesc:
-	db   "Restores #MON"
+	db   "Restores Pokémon"
 	next "HP by 20.@"
 
 ScopeLensDesc:
 	db   "Raises critical"
-	next "hit ratio. (HOLD)@"
+	next "hit ratio. (Hold)@"
 
 TeruSama12Desc:
 	db   "?@"
@@ -811,18 +811,18 @@ TeruSama13Desc:
 
 MetalCoatDesc:
 	db   "Powers up steel-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 DragonFangDesc:
 	db   "Powers up dragon-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 TeruSama14Desc:
 	db   "?@"
 
 LeftoversDesc:
 	db   "Restores HP during"
-	next "battle. (HOLD)@"
+	next "battle. (Hold)@"
 
 TeruSama15Desc:
 	db   "?@"
@@ -835,14 +835,14 @@ TeruSama17Desc:
 
 MysteryBerryDesc:
 	db   "A self-restore"
-	next "for PP. (HOLD)@"
+	next "for PP. (Hold)@"
 
 DragonScaleDesc:
 	db   "A rare dragon-type"
 	next "item.@"
 
 BerserkGeneDesc:
-	db   "Boosts ATTACK but"
+	db   "Boosts Attack but"
 	next "causes confusion.@"
 
 TeruSama18Desc:
@@ -856,42 +856,42 @@ TeruSama20Desc:
 
 SacredAshDesc:
 	db   "Fully revives all"
-	next "fainted #MON.@"
+	next "fainted Pokémon.@"
 
 HeavyBallDesc:
-	db   "A BALL for catch-"
-	next "ing heavy #MON.@"
+	db   "A Ball for catch-"
+	next "ing heavy Pokémon.@"
 
 FlowerMailDesc:
-	db   "Flower-print MAIL."
-	next "(HOLD)@"
+	db   "Flower-print Mail."
+	next "(Hold)@"
 
 LevelBallDesc:
-	db   "A BALL for lower-"
-	next "level #MON.@"
+	db   "A Ball for lower-"
+	next "level Pokémon.@"
 
 LureBallDesc:
-	db   "A BALL for #MON"
-	next "hooked by a ROD.@"
+	db   "A Ball for Pokémon"
+	next "hooked by a Rod.@"
 
 FastBallDesc:
 	db   "A BALL for catch-"
-	next "ing fast #MON.@"
+	next "ing fast Pokémon.@"
 
 TeruSama21Desc:
 	db   "?@"
 
 LightBallDesc:
 	db   "An odd, electrical"
-	next "orb. (HOLD)@"
+	next "orb. (Hold)@"
 
 FriendBallDesc:
-	db   "A BALL that makes"
-	next "#MON friendly.@"
+	db   "A Ball that makes"
+	next "Pokémon friendly.@"
 
 MoonBallDesc:
-	db   "A BALL for MOON"
-	next "STONE evolvers.@"
+	db   "A Ball for Moon"
+	next "Stone evolvers.@"
 
 LoveBallDesc:
 	db   "For catching the"
@@ -907,26 +907,26 @@ GorgeousBoxDesc:
 
 SunStoneDesc:
 	db   "Evolves certain"
-	next "kinds of #MON.@"
+	next "kinds of Pokémon.@"
 
 PolkadotBowDesc:
 	db   "Powers up normal-"
-	next "type moves. (HOLD)@"
+	next "type moves. (Hold)@"
 
 TeruSama22Desc:
 	db   "?@"
 
 UpGradeDesc:
 	db   "A mysterious box"
-	next "made by SILPH CO.@"
+	next "made by Silph Co.@"
 
-BerryDesc:
+OranBerryDesc:
 	db   "A self-restore"
-	next "item. (10HP, HOLD)@"
+	next "item. (10HP, Hold)@"
 
 GoldBerryDesc:
 	db   "A self-restore"
-	next "item. (30HP, HOLD)@"
+	next "item. (30HP, Hold)@"
 
 SquirtBottleDesc:
 	db   "A bottle used for"
@@ -937,7 +937,7 @@ TeruSama23Desc:
 
 ParkBallDesc:
 	db   "The Bug-Catching"
-	next "Contest BALL.@"
+	next "Contest Ball.@"
 
 RainbowWingDesc:
 	db   "A mystical feather"
@@ -951,40 +951,40 @@ BrickPieceDesc:
 	next "tile.@"
 
 SurfMailDesc:
-	db   "LAPRAS-print MAIL."
-	next "(HOLD)@"
+	db   "Lapras-print Mail."
+	next "(Hold)@"
 
 LiteBlueMailDesc:
-	db   "DRATINI-print"
-	next "MAIL. (HOLD)@"
+	db   "Dratini-print"
+	next "Mail. (Hold)@"
 
 PortraitMailDesc:
-	db   "MAIL featuring the"
+	db   "Mail featuring the"
 	next "holder's likeness.@"
 
 LovelyMailDesc:
-	db   "Heart-print MAIL."
-	next "(HOLD)@"
+	db   "Heart-print Mail."
+	next "(Hold)@"
 
 EonMailDesc:
-	db   "EEVEE-print MAIL."
-	next "(HOLD)@"
+	db   "Eevee-print Mail."
+	next "(Hold)@"
 
 MorphMailDesc:
-	db   "DITTO-print MAIL."
-	next "(HOLD)@"
+	db   "Ditto-print Mail."
+	next "(Hold)@"
 
 BlueSkyMailDesc:
-	db   "Sky-print MAIL."
-	next "(HOLD)@"
+	db   "Sky-print Mail."
+	next "(Hold)@"
 
 MusicMailDesc:
-	db   "NATU-print MAIL."
+	db   "Natu-print Mail."
 	next "(HOLD)@"
 
 MirageMailDesc:
-	db   "MEW-print MAIL."
-	next "(HOLD)@"
+	db   "Mew-print Mail."
+	next "(Hold)@"
 
 TeruSama25Desc:
 	db   "?@"
